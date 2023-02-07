@@ -10,6 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
     i18n: {done: "Select"}
   });
 
+  // modal -- ask to delete
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   let modalButton = document.querySelectorAll('.modal');
+  //   M.Modal.init(modalButton);
+  // });
+
+  // import jquery for modals
+  $(document).ready(function () {
+    $('.modal').modal();
+  });
+
   // select initialization
   selects = document.querySelectorAll('select');
   M.FormSelect.init(selects);
